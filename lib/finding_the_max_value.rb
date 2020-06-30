@@ -3,8 +3,11 @@ def find_max_value(array)
  max_value = array.first
  while(array[counter]) do
   if array[counter] > max_value
- counter +=1
- end
+    max_value = array[counter]
+  end
+  counter +=1
+  end
+  max_value
 end
 
 #find the max value from the array
